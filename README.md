@@ -20,36 +20,26 @@ I used a GPU container of https://ide.goorm.io/ to implement my code.
 ```
 
 Probably, you have to install additional packages like imutils, sklearn for notebook files.  
-If you just want to run flask, just install flask.
+If you just want to run flask, installing flask is enough.
 
 ```
 pip install flask imutils sklearn
 ```
 
+## Run
 
-## 🔧 Tip & Guide
+```py
+# First, run flask app. Default port is 5000.
+python model_app.py
+```
 
-* Command feature
-	* You can simply run your script using the shortcut icons on the top right.
-	* Check out `PROJECT > Common/Build/Run/Test/Find Command` in the top menu.
-	
-* Get URL and Port
-	* Click `PROJECT > URL/PORT` in top menu bar.
-	* You can get default URL/Port and add URL/Port in the top menu.
+My explanation is for "localhost:5000".
+You can change this address into container URL like https://xxxx.run-asia-northeast1.goorm.io.
 
-* Useful shortcut
-	
-| Shortcuts name     | Command (Mac) | Command (Window) |
-| ------------------ | :-----------: | :--------------: |
-| Copy in Terminal   | ⌘ + C         | Ctrl + Shift + C |
-| Paste in Terminal  | ⌘ + V         | Ctrl + Shift + V |
-| Search File        | ⌥ + ⇧ + F     | Alt + Shift + F  |
-| Terminal Toggle    | ⌥ + ⇧ + B     | Alt + Shift + B  |
-| New Terminal       | ⌥ + ⇧ + T     | Alt + Shift + T  |
-| Code Formatting    | ⌥ + ⇧ + P     | Alt + Shift + P  |
-| Show All Shortcuts | ⌘ + H         | Ctrl + H         |
+```
+# send JSON to flask app
+curl -X post -d@./jsons/serving-image-5.json -H 'Content-Type: application/json' localhost:5000/test
+```
 
-## 💬 Support & Documentation
-
-Visit [https://ide.goorm.io](https://ide.goorm.io) to support and learn more about using goormIDE.  
-To watch some usage guides, visit [https://help.goorm.io/en/goormide](https://help.goorm.io/en/goormide)
+## To do
+I will add nginx, WSGI(gunicorn) later.
