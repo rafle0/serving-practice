@@ -64,8 +64,8 @@ model/1/ : tensorflow weight files obtained from model.ipynb
 
 ## AI model
 
-I used MobileNetV3Large API of tensorflow, and add batch_normalization, flatten, dense layer with 3 outputs.
-You can see model.summary() below.
+I used MobileNetV3Large API of tensorflow, and add batch_normalization, flatten, dense layer with 3 outputs.  
+You can see the result of model.summary() below.
 
 ```
 _________________________________________________________________
