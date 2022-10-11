@@ -5,7 +5,7 @@ Datasets and AI models are based on https://github.com/zhongli1990/Covid19-X-Ray
 
 ## Environment
 
-I used a container of https://ide.goorm.io/ to run my code.    
+I used a container of https://ide.goorm.io/ to run my code.  
 ```
 ┌───────────────────────────────────────────────┐
                                        _       
@@ -29,8 +29,10 @@ pip install flask imutils sklearn tensorflow==2.8.0
 
 ## Run
 
+In model_app.py, I set port=5000. 
+If you use https://ide.goorm.io/, you can use your container's URL/port.
 ```py
-# First, run flask app. Default port is 5000.
+# First, run flask app.
 python model_app.py
 ```
   
@@ -52,7 +54,7 @@ cd serving-practice
 curl -X POST -d@./jsons/serving-image-5.json -H "Content-Type: application/json" https://flask-wyrca.run.goorm.io/test
 ```
 
-If you want to do some details like training, making json from images.. please look or run ipynb files.  
+If you want to do some details like training, making json from images by yourself.. please look or run ipynb files.  
 
 
 ## Folders and Files
