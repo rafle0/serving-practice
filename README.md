@@ -1,3 +1,12 @@
+# Deep Learning Model Serving Practice
+
+In this repo, I introduce how to serve a simple deep learning model with flask.  
+Datasets and AI models are based on https://github.com/zhongli1990/Covid19-X-Rays.
+
+## Environment
+
+I used a GPU container of https://ide.goorm.io/ to implement my code.  
+(I think that someone can implement this code without GPU, but I didn't check it.) 
 ```
 ┌───────────────────────────────────────────────┐
                                        _       
@@ -10,13 +19,12 @@
 └───────────────────────────────────────────────┘
 ```
 
-# goormIDE
-Welcome to goormIDE!
+Probably, you have to install additional packages like imutils, sklearn for notebook files.  
+If you just want to run flask, just install flask.
 
-goormIDE is a powerful cloud IDE service to maximize productivity for developers and teams.  
-**DEVELOP WITH EXCELLENCE**  
-
-`Happy coding! The goormIDE team`
+```
+pip install flask imutils sklearn
+```
 
 
 ## 🔧 Tip & Guide
