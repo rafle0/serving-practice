@@ -95,4 +95,4 @@ I will add nginx, WSGI(gunicorn) later to make better example of a serving app.
 
 <img src="https://theaisummer.com/static/3bc002a80c39d1e6c423a1da33585f97/c0388/uwsgi.png">  
 
-If I have enough time, I want to make upload/ show image functions on web.
+If I have enough time, I want to make upload/ show image functions on web.  
