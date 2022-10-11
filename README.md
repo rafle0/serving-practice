@@ -29,7 +29,7 @@ pip install flask imutils sklearn tensorflow==2.8.0
 
 ## Run
 
-In model_app.py, I set port=5000. 
+In model_app.py, I set port=5000.   
 If you use https://ide.goorm.io/, you can use your container's URL/port.
 ```py
 # First, run flask app.
