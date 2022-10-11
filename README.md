@@ -68,8 +68,8 @@ model.ipynb : training our AI model and save it in './model/1/'
 json.ipynb : make json files from 27 test images and save it in './jsons/'  
 predict.ipynb : load our AI model in './model/1/' and predict test images obtained from json files  
 
-jsons/ : json files obtained from json.ipynb files  
-model/1/ : tensorflow weight files obtained from model.ipynb
+jsons/ : json files from 27 test images  
+model/1/ : tensorflow model weight files (saved in model.ipynb)  
 
 ## AI model
 
