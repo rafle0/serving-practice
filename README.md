@@ -5,8 +5,7 @@ Datasets and AI models are based on https://github.com/zhongli1990/Covid19-X-Ray
 
 ## Environment
 
-I used a GPU container of https://ide.goorm.io/ to implement my code.    
-(I think that someone can implement this code without GPU, but I didn't check it.) 
+I used a container of https://ide.goorm.io/ to run my code.    
 ```
 ┌───────────────────────────────────────────────┐
                                        _       
@@ -47,6 +46,8 @@ You can change localhost:5000/test into {container URL}/test if you use this com
 Currently, this flask app is working on https://flask-wyrca.run.goorm.io/.
 You can test it with json files in this repo.  
 (just change localhost:5000/test into https://flask-wyrca.run.goorm.io/test)
+
+If you want to do some details like training, making json from images.. please look or run ipynb files.  
 
 
 ## Folders and Files
