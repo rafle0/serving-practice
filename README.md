@@ -38,7 +38,7 @@ You can change this address into container URL like https://xxxx.run-asia-northe
 
 ```
 // send JSON to flask app
-curl -X POST -d@./jsons/serving-image-5.json -H 'Content-Type: application/json' localhost:5000/test
+curl -X POST -d@./jsons/serving-image-5.json -H "Content-Type: application/json" localhost:5000/test
 ```
 This command returns a json consist of 'instances' and 'label'. 
 
