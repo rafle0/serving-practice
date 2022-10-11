@@ -36,9 +36,9 @@ python model_app.py
 My explanation is for "localhost:5000".  
 You can change this address into container URL like https://xxxx.run-asia-northeast1.goorm.io.
 
-```py
-# send JSON to flask app
-curl -X post -d@./jsons/serving-image-5.json -H 'Content-Type: application/json' localhost:5000/test
+```
+// send JSON to flask app
+curl -X POST -d@./jsons/serving-image-5.json -H 'Content-Type: application/json' localhost:5000/test
 ```
 This command returns a json consist of 'instances' and 'label'. 
 
