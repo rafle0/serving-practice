@@ -62,5 +62,31 @@ predict.ipynb : load our AI model in './model/1/' and predict test images obtain
 jsons/ : json files obtained from json.ipynb files  
 model/1/ : tensorflow weight files obtained from model.ipynb
 
+## AI model
+
+I used MobileNetV3Large API of tensorflow, and add batch_normalization, flatten, dense layer with 3 outputs.
+You can see model.summary() below.
+
+```
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ MobilenetV3large (Functiona  (None, 7, 7, 960)        2996352   
+ l)                                                              
+                                                                 
+ batch_normalization (BatchN  (None, 7, 7, 960)        3840      
+ ormalization)                                                   
+                                                                 
+ flatten (Flatten)           (None, 47040)             0         
+                                                                 
+ dense (Dense)               (None, 3)                 141123    
+                                                                 
+=================================================================
+Total params: 3,141,315
+Trainable params: 143,043
+Non-trainable params: 2,998,272
+_________________________________________________________________
+```
+
 ## To do  
 I will add nginx, WSGI(gunicorn) later.
