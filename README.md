@@ -5,7 +5,7 @@ Datasets and AI models are based on https://github.com/zhongli1990/Covid19-X-Ray
 
 ## Environment
 
-I used a GPU container of https://ide.goorm.io/ to implement my code.  
+I used a GPU container of https://ide.goorm.io/ to implement my code.    
 (I think that someone can implement this code without GPU, but I didn't check it.) 
 ```
 ┌───────────────────────────────────────────────┐
@@ -20,7 +20,7 @@ I used a GPU container of https://ide.goorm.io/ to implement my code.
 ```
 
 Probably, you have to install additional packages like imutils, sklearn for notebook files.  
-If you just want to run flask, installing flask is enough.
+If you just want to run flask, installing flask is enough.  
 
 ```
 pip install flask imutils sklearn
@@ -33,13 +33,28 @@ pip install flask imutils sklearn
 python model_app.py
 ```
 
-My explanation is for "localhost:5000".
+My explanation is for "localhost:5000".  
 You can change this address into container URL like https://xxxx.run-asia-northeast1.goorm.io.
 
-```
+```py
 # send JSON to flask app
 curl -X post -d@./jsons/serving-image-5.json -H 'Content-Type: application/json' localhost:5000/test
 ```
+This command returns a json consist of 'instances' and 'label'. 
 
-## To do
+## Folders and Files
+./train/ : 200 train images with three labels 'covid', 'normal', 'pneumonia_bac'  
+./test/ : 27 test images with three labels 'covid', 'normal', 'pneumonia_bac'
+
+app.py : basic template for flask  
+model_app.py : our flask app  
+
+model.ipynb : training our AI model and save it in './model/1/'  
+json.ipynb : make json files from 27 test images and save it in './jsons/'  
+predict.ipynb : load our AI model in './model/1/' and predict test images obtained from json files  
+
+./jsons/ : json files obtained from json.ipynb files  
+./model/1/ : tensorflow weight files obtained from model.ipynb
+
+## To do  
 I will add nginx, WSGI(gunicorn) later.
