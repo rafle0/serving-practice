@@ -19,7 +19,8 @@ I used a GPU container of https://ide.goorm.io/ to implement my code.
 └───────────────────────────────────────────────┘
 ```
 
-For AI model, tensorflow==2.8.0 is required. Other version may show you error message on JSON.
+For AI model, tensorflow==2.8.0 is required.  
+(Other version may show you an error message when you load my model.)      
 Probably, you have to install additional packages like imutils, sklearn for notebook files.  
 If you just want to run flask, installing flask is enough.  
 
