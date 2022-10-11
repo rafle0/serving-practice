@@ -46,6 +46,11 @@ You can change localhost:5000/test into {container URL}/test if you use this com
 Currently, this flask app is working on https://flask-wyrca.run.goorm.io/.
 You can test it with json files in this repo.  
 (just change localhost:5000/test into https://flask-wyrca.run.goorm.io/test)
+```
+git clone https://github.com/rafle0/serving-practice
+cd serving-practice
+curl -X POST -d@./jsons/serving-image-5.json -H "Content-Type: application/json" https://flask-wyrca.run.goorm.io/test
+```
 
 If you want to do some details like training, making json from images.. please look or run ipynb files.  
 
