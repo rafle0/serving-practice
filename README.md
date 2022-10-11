@@ -34,15 +34,16 @@ pip install flask imutils sklearn tensorflow==2.8.0
 # First, run flask app. Default port is 5000.
 python model_app.py
 ```
-
-My explanation is for "localhost:5000".  
-You can change this address into container URL.
+  
+If you want to check inside the container(inside your environment), curl localhost:5000 like below.
 
 ```
 // send JSON to flask app
 curl -X POST -d@./jsons/serving-image-5.json -H "Content-Type: application/json" localhost:5000/test
 ```
-This command returns a json consist of 'instances' and 'label'.   
+This command returns a json consist of 'instances' and 'label'.     
+You can change localhost:5000/test into {container URL}/test if you use this command outside the container.  
+
 Currently, this flask app is working on https://flask-wyrca.run.goorm.io/.
 You can test it with json files in this repo.  
 (just change localhost:5000/test into https://flask-wyrca.run.goorm.io/test)
