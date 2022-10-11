@@ -1,4 +1,4 @@
-# Deep Learning Model Serving Practice
+# Serving a Deep Learning Model with Flask
 
 In this repo, I introduce how to serve a simple deep learning model with flask.  
 Datasets and AI models are based on https://github.com/zhongli1990/Covid19-X-Rays.
